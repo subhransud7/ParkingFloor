@@ -1,0 +1,10 @@
+Created parking of 6 slots
+Car with vehicle registration number "KA-01-HH-1234" has been parked at slot number 1
+Invalid Command Format
+[1]
+Car with vehicle registration number "PB-01-TG-2341" has been parked at slot number 2
+There is already a Parking Floor
+No Such Vehicle Found
+Slot number 2 vacated, the car with vehicle registration number "PB-01-TG-2341" left the space, the driver of the car was of age 40
+Invalid Parameters for the given Command
+[KA-01-HH-1234]

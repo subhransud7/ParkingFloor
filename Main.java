@@ -9,7 +9,7 @@ public class Main {
     final BufferedReader reader;
     CommandHandler commandHandler;
 
-    final String fileName = "input.txt";
+    final String fileName = "input2.txt";
     final File file = new File(fileName);
     final TicketService ticketService = new TicketService();
     final CommandFactory commandFactory = new CommandFactory(ticketService);
