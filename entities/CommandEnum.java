@@ -1,5 +1,8 @@
 package entities;
 
+/*
+*Defines enum for different types of commands
+*/
 public enum CommandEnum{
     CREATE_PARK,
     LEAVE,

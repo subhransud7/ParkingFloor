@@ -1,12 +1,15 @@
 package commands;
+
 import services.TicketService;
 import services.PrintService;
 import java.util.List;
-
 import entities.Command;
 import entities.CommandEnum;
 import entities.ErrorEnum;
 
+/*
+* Command to create a parking lot with given number of slots.
+*/
 public class CreateParkingLotCommand implements Command{
   private int slots;
   private List<String> params;
@@ -53,5 +56,4 @@ public class CreateParkingLotCommand implements Command{
     slots=Integer.valueOf(params.get(0));
     errorType = ErrorEnum.DEFAULT; 
   }
-  
 }

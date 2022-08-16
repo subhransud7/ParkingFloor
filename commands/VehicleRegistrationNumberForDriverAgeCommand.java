@@ -1,13 +1,16 @@
 package commands;
 
 import java.util.List;
-
 import services.PrintService;
 import services.TicketService;
 import entities.Command;
 import entities.CommandEnum;
 import entities.ErrorEnum;
 
+
+/*
+* Command to provide the vehicle numbers of the given driver age
+*/
 public class VehicleRegistrationNumberForDriverAgeCommand implements Command{
     private List<String> vehicleNums;
     private int age;

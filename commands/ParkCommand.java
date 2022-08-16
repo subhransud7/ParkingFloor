@@ -1,7 +1,6 @@
 package commands;
 
 import java.util.List;
-
 import entities.Command;
 import entities.ErrorEnum;
 import entities.CommandEnum;
@@ -9,6 +8,9 @@ import services.PrintService;
 import services.TicketService;
 import entities.Vehicle;
 
+/**
+ * Command to park a vehicle with given vehicle number and age of driver.
+ */
 public class ParkCommand implements Command{
     private String vehicleNum;
     private int ageOfDriver;

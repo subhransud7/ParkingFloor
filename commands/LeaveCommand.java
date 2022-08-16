@@ -1,12 +1,16 @@
 package commands;
+
 import services.PrintService;
 import services.TicketService;
-
 import java.util.List;
 import entities.*;
 import entities.Command;
 import entities.Vehicle;
 
+
+/*
+* Command to leave a slot.
+*/
 public class LeaveCommand implements Command{
     private int slotToFree;
     private Vehicle vehicleLeft;

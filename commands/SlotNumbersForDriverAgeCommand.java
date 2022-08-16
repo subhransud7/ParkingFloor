@@ -2,13 +2,16 @@ package commands;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
 import entities.Command;
 import entities.ErrorEnum;
 import entities.CommandEnum;
 import services.PrintService;
 import services.TicketService;
 
+
+/*
+* Command to provide the slots where drivers of given age has parked vehicle.
+*/
 public class SlotNumbersForDriverAgeCommand implements Command{
     private List<Integer> slotNums;
     private int ageOfDriver;
@@ -54,7 +57,6 @@ public class SlotNumbersForDriverAgeCommand implements Command{
 
     @Override
     public void setParams(List<String> params) {
-      // TODO Auto-generated method stub
       this.params = params;
       ageOfDriver = Integer.valueOf(params.get(0));
       errorType = ErrorEnum.DEFAULT;

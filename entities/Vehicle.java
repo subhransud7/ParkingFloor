@@ -1,5 +1,8 @@
 package entities;
 
+/*
+* Vehicle represent the vehicle to be parked. 
+*/
 public class Vehicle{
     final private String vehicleNum;
     final private int ageOfDriver;

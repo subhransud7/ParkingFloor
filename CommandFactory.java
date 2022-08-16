@@ -1,11 +1,12 @@
 import services.TicketService;
 import java.util.HashMap;
 import java.util.List;
-
 import commands.CreateParkingLotCommand;
 import entities.*;
 import commands.*;
-
+/*
+Factory class for all the commands.
+*/
 public class CommandFactory {
     final private TicketService ticketService;
     final private HashMap<CommandEnum,Command> commandMap;

@@ -1,14 +1,16 @@
 package commands;
+
 import services.PrintService;
 import services.TicketService;
-
 import java.util.List;
-
 import entities.Command;
 import entities.ErrorEnum;
 import entities.CommandEnum;
 
 
+/*
+* Command to provide the slot where the Vehicle with vehicle number is parked.
+*/
 public class SlotNumberForCarNumberCommand implements Command{
     private int slotNum;
     private String vehicleNum;
@@ -51,7 +53,6 @@ public class SlotNumberForCarNumberCommand implements Command{
 
     @Override
     public void setParams(List<String> params) {
-      // TODO Auto-generated method stub
       this.params = params;
       vehicleNum = params.get(0);
       errorType = ErrorEnum.DEFAULT;

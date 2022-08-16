@@ -1,11 +1,12 @@
-//It channels the command to its proper class to be handled
 import java.util.*;
-
 import services.PrintService;
 import entities.Command;
 import entities.CommandEnum;
 import entities.ErrorEnum;
 
+/*
+Processess every request and assigns a command to handle the request if valid.
+*/
 public class CommandHandler{
   private CommandEnum commandType; 
   private List<String> params;
@@ -28,7 +29,7 @@ public class CommandHandler{
         List<String> parameters = commandParametersMap.get(comm);
         commandType = commandFactory.getCommandEnumMap().get(comm);
         setValid(true);
-        //checks if parameters are valid
+        //checks if parameter arguments are valid
         if(parsedCommand.length>2){
           if(parameters.isEmpty()){
             setValid(false);

@@ -1,12 +1,13 @@
 package services;
 
 import entities.ErrorEnum;
-
 import java.util.Arrays;
 import java.util.List;
-
 import entities.CommandEnum;
 
+/*
+* This class provide the service to print the result to output according to success or failure.
+*/
 public class PrintService {
     private ErrorEnum invalidType;
     private CommandEnum commandType;

@@ -1,5 +1,8 @@
 package entities;
 
+/*
+* Provides enum for different types of error scenarios and edge cases.
+*/
 public enum ErrorEnum {
     DEFAULT,
     INVALID_COMMAND,

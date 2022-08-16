@@ -1,5 +1,8 @@
 package entities;
 
+/*
+* Slot represent a slot in the parking floor.
+*/
 public class Slot{
     final private int slotNum;
     private String vehicleNum;
